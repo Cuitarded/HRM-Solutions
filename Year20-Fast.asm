@@ -1,0 +1,10 @@
+-- HUMAN RESOURCE MACHINE PROGRAM --
+
+    BUMPUP 9
+    BUMPUP 9
+    ADD 9
+a:
+    JUMPN    a
+    JUMPN    a
+
+
