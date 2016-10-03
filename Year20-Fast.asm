@@ -6,9 +6,9 @@
     COPYTO 4
     INBOX
     COPYTO 0
-	INBOX
-	SUB 4
-	JUMPN a
+    INBOX
+    SUB 4
+    JUMPN a
 	JUMPZ b
 	SUB 9
 	JUMPN c
