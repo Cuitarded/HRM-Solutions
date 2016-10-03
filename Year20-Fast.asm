@@ -11,24 +11,66 @@
 	JUMPN a
 	JUMPZ b
 	SUB 9
-	JUMPN f
-	
-	
- a:
- 	ADD 9
 	JUMPN c
 	JUMPZ d
-	JUMP e
+	SUB 9
+	JUMPN e
+	JUMPZ f
+	COPYFROM 0
+	ADD 0
+	ADD 0
+	COPYTO 0
+	JUMP g
+
+ a: 
+ 	ADD 9
+	JUMPN i
+	JUMPZ g
+	COPYFROM 0
+	JUMP g:
+ 
  b:
  	ADD 0
- e:
 	ADD 0
- d: 
-	ADD 0
+	COPYTO 0
+	JMP h
  c:
+ 	COPYFROM 0
 	ADD 0
+	COPYTO 2
+	ADD 2
+	JUMP h
+ d:
+ 	COPYFROM 0
+	ADD 0
+	ADD 0
+	COPYTO 0
+	JUMP h
+ e: 
+ 	COPYFROM 0
+	ADD 0
+	ADD 0
+	COPYTO 2
+	ADD 2
+	JUMP h
+ f: 
+ 	ADD 0
+	ADD 0
+	ADD 0
+	ADD 0
+	COPYTO 0
+	JUMP h
+ i:
+ 	COPYFROM 0
+	JUMP j
+ g:
+ 	ADD 0
+ h:
+	ADD 0
+ j:
+	OUTBOX
 	
-BLAH:
+ BLAH:
     JUMPN a
     JUMPN a
 
